@@ -13,6 +13,10 @@ html {
       src: url("fonts/CaviarDreams.ttf");
 }
 
+h2 {
+      font-family: CaviarDreams
+}
+
 p {
       font-family: CaviarDreams
 }
