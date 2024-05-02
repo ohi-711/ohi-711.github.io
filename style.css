@@ -1,3 +1,8 @@
+html {
+      background-color: #3b6064;
+}
+
+
 @font-face {
       font-family: LemonMilk;
       src: url("fonts/LEMONMILK-Bold.otf");
@@ -7,7 +12,7 @@
       font-family: CaviarDreams;
       src: url("fonts/CaviarDreams.ttf");
 }
-      
+
 p {
       font-family: CaviarDreams
 }
