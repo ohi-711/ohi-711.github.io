@@ -14,25 +14,31 @@
 <body>
   <h1 style="font-family: LemonMilk;">SEARCHING ALGORITHMS</h1>
   <h2>BUBBLE SORT</h2>
-  <p>Bubble sort checks the first and second element. 
-        If the first is larger, then the location of the two elements are switched. 
-        Then, the program checks the second and third element. If the second is larger, 
+  <p>Bubble sort checks the first and second elements. 
+        If the first is larger, then the location of the two elements is switched. 
+        Then, the program checks the second and third elements. If the second is larger, 
         then the two elements are swapped. This is repeated through the array multiple 
         times until the array is sorted. It's time complexity is O(n^2), making it an 
         inefficient sorting algorithm.</p>
+  <p>Here is what bubble sort implementation looks like in Java.</p>
+  <img src="examples/bubblesort.png" width="591" height="604"/>
   <h2>INSERTION SORT</h2>
   <p>Insertion sort splits the list into two parts: a sorted and unsorted part of the list.
-        First the program selects the first element in the unsorted list.
-        Then, it finds where it belongs in the sorted list and place it there. This repeats 
+        First, the program selects the first element in the unsorted list.
+        Then, it finds where it belongs in the sorted list and places it there. This repeats 
         until the list is sorted. 
         The time complexity is O(n^2), but insertion sort is faster than bubble sort.
   </p>
+  <p>Here is what insertion sort implementation looks like in Java.</p>
+  <img src="examples/insertionsort.png" width="517" height="322"/>
   <h2>SELECTION SORT</h2>
   <p>Selection sort splits the list into a sorted and unsorted part. Then, it finds the 
         smallest element in the unsorted list. The program places it in the sorted list.
         This process repeats until the list is sorted. The time complexity is O(n^2) but 
         selection sort is faster than bubble and insertion sort.
-</p>
+  </p>
+  <p>Here is what selection sort implementation looks like in Java.</p>
+  <img src="examples/selectionsort.png" width="695" height="481"/>
   <h2>MERGE SORT</h2>
   <p>Merge sort divides the list into n sublists of 1 element. Then, it repeatedly merges 
         sublists to produce a new sorted sublist until you have 1: the sorted list. This 
@@ -41,7 +47,7 @@
 </p>
   <h2>BOGO SORT</h2>
   <p>Bogo sort repeatedly randomizes the array. Then, it checks if it is sorted. If not, 
-        the array is randomized again and checked. It's time complexity is O(n*n!).
+        the array is randomized again and checked. Its time complexity is O(n*n!).
 </p>
 </body>
 
