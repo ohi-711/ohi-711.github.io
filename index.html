@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>April Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" alt="Logo">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>
+                    Grade 11 MaCS Student @William Lyon Mackenzie CI
+                </p>
+                <h1>Hi, I'm <span>April Sun</span></h1>
+            </div>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>omg sjaoidjowajdoawjdawd</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Full-stack Developer</span><br>Doing front-end and back-end</li>
+                            <li><span>Graphic Designer</span><br>Creating graphics for clubs and organizations</li>
+                            <li><span>Marketer</span><br>Managing social media accounts</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Present</span><br>String Orchestra Vice President @ WLMAC</li>
+                            <li><span>2022-Present</span><br>Beginner Python Lead @ Coding is Fun</li>
+                            <li><span>2022-Present</span><br>Web Developer @ Dr. Kang Lee's Development Lab</li>
+                            <li><span>2023-Present</span><br>Arts Writer @ The Lyon (school newspaper)</li>
+                            <li><span>2024-Present</span><br>Co-director of Communications @ Technolgap</li>
+                            <li><span>2024</span><br>Back-end intern @ The Pink Stairs</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2026</span><br>MaCS Student at William Lyon Mackenzie C.I.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">Services</h1>
+        <div class="services-list">
+            <div>
+                <h2>Web Development</h2>
+                <p>jdwaiodjawiodj woiajdawjdowajd jawoidjwaoidjawo djwaoijdoiw ajdioawjd oiajdioaw</p>
+                <a href="'#">learn more </a>
+            </div>
+            <div>
+                <h2>Graphic Design</h2>
+                <p>jdwaio djawiodjw oiajdawjd owajdjawoid jwaoidja wodjwao ijdoiwa jdio awjdo iajd ioaw</p>
+                <a href="'#">learn more </a> 
+            </div>
+            <div>
+                <h2>Marketing</h2>
+                <p>jdwaiodjawi odjwoiajdawjdowajd jawoidjwa oidjawodjw aoijd oiwaj dioawjdo iajd ioaw</p>
+                <a href="'#">learn more </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+        for (tablink of tablinks) {
+            tablink.classList.remove('active-link');
+        }
+        for (tabcontent of tabcontents) {
+            tabcontent.classList.remove('active-tab');
+        }
+        event.currentTarget.classList.add('active-link');
+        document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+</body>
+</html>
