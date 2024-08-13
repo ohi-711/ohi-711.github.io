@@ -13,13 +13,15 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="Logo">
-                <ul>
-                    <li><a href="#home">Home</a></li>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#contact">Contact</a></li>
+                    <i class="fas fa-solid fa-circle-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fas fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>
@@ -145,6 +147,7 @@
                 <p><i class="fa-solid fa-phone"></i> 647-975-3896</p>
                 <div class="social-icons">
                     <a href="https://www.linkedin.com/in/april-sun-67392227a/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/ohi-711/"><i class="fa-brands fa-github"></i></a>
                 </div>
                 <a href="images/resume.pdf" download class="btn btn2">Download CV</a>
             </div>
@@ -178,6 +181,18 @@
         }
         event.currentTarget.classList.add('active-link');
         document.getElementById(tabname).classList.add('active-tab');
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById('sidemenu');
+
+    function openmenu() {
+        sidemenu.style.right = '0';
+    }
+
+    function closemenu() {
+        sidemenu.style.right = '-200px';
     }
 </script>
 
