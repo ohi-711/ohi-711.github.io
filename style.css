@@ -368,6 +368,20 @@ nav .fas {
     display: none;
 }
 
+ul li ul {
+    margin-top: 4px;
+    padding-left: 20px;
+    list-style-type: disc;
+}
+
+ul li ul li {
+    font-size: 0.85em;
+    font-weight: normal;
+    color: #555; 
+    line-height: 1.4;
+    margin-bottom: 2px;
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/background2.jpg); /* Change the background image here */
