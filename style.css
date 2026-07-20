@@ -419,6 +419,23 @@ ul li ul li {
     vertical-align: middle;
 }
 
+.header-text h1 .wave-word {
+    display: inline-block;
+    transition: transform 0.2s ease;
+}
+
+.header-text h1:hover .wave-word {
+    animation: wave-bounce 0.6s ease;
+    animation-fill-mode: backwards;
+}
+
+@keyframes wave-bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-14px); }
+    60%  { transform: translateY(3px); }
+    100% { transform: translateY(0); }
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/background2.jpg); 
