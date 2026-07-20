@@ -211,7 +211,7 @@ nav ul li a:hover::after {
 
 .work-list {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(3, 1fr);
     grid-gap: 40px;
     margin-top: 50px;
 }
@@ -224,6 +224,9 @@ nav ul li a:hover::after {
 
 .work img {
     width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    object-position: center;
     border-radius: 10px;
     display: block;
     transition: transform 0.5s;
@@ -382,9 +385,17 @@ ul li ul li {
     margin-bottom: 2px;
 }
 
+.more-work {
+    display: none;
+}
+
+.more-work.show {
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
     #header {
-        background-image: url(images/background2.jpg); /* Change the background image here */
+        background-image: url(images/background2.jpg); 
     }
 
     .header-text {
@@ -451,6 +462,18 @@ ul li ul li {
 
     .copyright {
         font-size: 14px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .work-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .work-list {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
