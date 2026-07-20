@@ -256,8 +256,13 @@ nav ul li a:hover::after {
     margin-bottom: 20px;
 }
 
-.layer a {
+.layer-links {
+    display: flex;
+    gap: 20px;
     margin-top: 20px;
+}
+
+.layer-links a {
     color: #00d8bb;
     text-decoration: none;
     font-size: 18px;
