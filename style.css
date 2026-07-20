@@ -398,6 +398,14 @@ ul li ul li {
     display: block;
 }
 
+.more-experience {
+    display: none;
+}
+
+.more-experience.show {
+    display: block;
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/background2.jpg); 
