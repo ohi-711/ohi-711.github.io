@@ -100,9 +100,28 @@ nav ul li a:hover::after {
     flex-basis: 35%;
 }
 
-.about-col-1 img {
+.about-slideshow {
+    position: relative;
     width: 100%;
+    aspect-ratio: 4 / 5;
     border-radius: 15px;
+    overflow: hidden;
+}
+
+.about-slideshow img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    opacity: 0;
+    transition: opacity 1.2s ease-in-out;
+}
+
+.about-slideshow img.active {
+    opacity: 1;
 }
 
 .about-col-2 {
