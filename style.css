@@ -406,6 +406,19 @@ ul li ul li {
     display: block;
 }
 
+.social-icon-img {
+    width: 25px;
+    height: 25px;
+    object-fit: contain;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.services-list div a i {
+    font-size: 25px;
+    vertical-align: middle;
+}
+
 @media only screen and (max-width: 600px) {
     #header {
         background-image: url(images/background2.jpg); 
