@@ -425,6 +425,14 @@ ul li ul li {
     display: block;
 }
 
+.more-skills {
+    display: none;
+}
+
+.more-skills.show {
+    display: block;
+}
+
 .social-icon-img {
     width: 25px;
     height: 25px;

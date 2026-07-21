@@ -21,6 +21,15 @@ function toggleMoreWork() {
     btn.textContent = isHidden ? 'See more' : 'See less';
 }
 
+function toggleMoreSkills() {
+    const moreSkills = document.querySelectorAll('.more-skills');
+    const btn = document.getElementById('see-more-skills-btn');
+    const isHidden = moreSkills[0].classList.contains('show');
+
+    moreSkills.forEach(skill => skill.classList.toggle('show'));
+    btn.textContent = isHidden ? 'See more' : 'See less';
+}
+
 function toggleMoreExperience() {
     const moreExperience = document.querySelectorAll('.more-experience');
     const btn = document.getElementById('see-more-exp-btn');
